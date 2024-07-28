@@ -41,7 +41,7 @@ This project is a Covid-19 statistics map application built with React. It inclu
 
 ## Preview
 
-![](/public/%C4%B0ceCream.gif)
+![](/public/covidmap.gif)
 
 ## Deployment
 
