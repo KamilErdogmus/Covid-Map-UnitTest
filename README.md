@@ -16,7 +16,6 @@ This project is a Covid-19 statistics map application built with React. It inclu
 - Interactive map with detailed statistics for each country
 - Responsive design for mobile and desktop views
 - Data visualization using charts and graphs
-- Libraries
 
 ## Libraries
 
