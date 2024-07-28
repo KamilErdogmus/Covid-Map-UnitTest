@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Covid Map with React Unit Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This project is a Covid-19 statistics map application built with React. It includes unit testing to ensure the functionality and reliability of the app.
 
-In the project directory, you can run:
+## APIS
 
-### `npm start`
+- [Covid-19 Statistics API](https://rapidapi.com/axisbits-axisbits-default/api/covid-19-statistics/playground/apiendpoint_ef9e1955-666c-43ba-9b5c-4b463ae316dc).
+- [Rest Countries API](https://restcountries.com/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Display Covid-19 statistics on a world map
+- Filter data by country and date
+- Interactive map with detailed statistics for each country
+- Responsive design for mobile and desktop views
+- Data visualization using charts and graphs
+- Libraries
 
-### `npm test`
+## Libraries
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **react-router-dom**: Routing for React applications.
+- **react-icons**: Popular icons as React components.
+- **tailwind**: Utility-first CSS framework.
+- **react-simple-maps**: SVG maps in React.
+- **@reduxjs/toolkit**: Tools for efficient Redux development.
+- **react-redux**: React bindings for Redux.
+- **@testing-library/user-event@14.0**: Simulates user interactions in tests.
+- **axios**: Promise-based HTTP client.
+- **react-testing-library**: Testing utilities for React components.
+- **jest**: JavaScript testing framework.
+- **redux-mock-store**: Mock Redux store for testing.
+- **redux-thunk**: Middleware for async Redux actions.
+- **react-loader-spinner**: Loading spinner components.
+- **millify**: Converts long numbers to readable format.
 
-### `npm run build`
+## Using Elements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Uiverse.io-Retry Button](https://uiverse.io/namecho/slippery-moth-23)
+- [Uiverse.io-Back Button](https://uiverse.io/Jedi-hongbin/modern-sloth-8)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Preview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![]()
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project is deployed and can be accessed [here](). For the project to run smoothly, please follow the installation steps below to set it up locally. Note that the project may behave differently across different browsers.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the project locally, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+````bash
+git clone https://github.com/KamilErdogmus/Covid-Map-UnitTest.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the project directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd your-repository
+````
 
-### Code Splitting
+3. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm install
+```
 
-### Analyzing the Bundle Size
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+5. Open your web browser and visit http://localhost:3000 to view the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Testing
 
-### Advanced Configuration
+To ensure the quality and functionality of the app, we have included unit tests. Follow the steps below to run the tests:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Run the tests**:
 
-### Deployment
+   ```bash
+   npm test
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. **Testing Details**:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - The tests cover various components and functionalities of the application.
+   - Tests simulate user interactions such as clicking buttons and filling forms using `@testing-library/user-event`.
+   - The test suite is managed by `jest` and ensures that the components render correctly, handle user input, and interact with the mock server as expected.
