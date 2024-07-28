@@ -10,7 +10,7 @@ import millify from "millify";
 //! test ortamındaki sahte store'un krulumunu yap
 const mockStore = configureStore([thunk]);
 
-test("Yüklenme durumunda loader bileşenleri ekrana basılır", () => {
+test("Loader components are displayed on the screen during the loading state.", () => {
   const store = mockStore({
     isLoading: true,
     error: null,
@@ -28,7 +28,7 @@ test("Yüklenme durumunda loader bileşenleri ekrana basılır", () => {
   expect(screen.queryAllByTestId("card-loader")).toHaveLength(0);
 });
 
-test("Hata durumunda error bileşenleri ekrana basılır", () => {
+test("Error components are displayed on the screen in case of an error.", () => {
   const store = mockStore({
     isLoading: false,
     isError: "404 not found",
@@ -45,7 +45,7 @@ test("Hata durumunda error bileşenleri ekrana basılır", () => {
 
   screen.getByText(/404 not found/i);
 });
-test(" ülke bilgisi ve kartlar ekrana basılır", () => {
+test("Country information and cards are displayed on the screen.", () => {
   const store = mockStore({
     isLoading: false,
     isError: null,
@@ -74,13 +74,13 @@ test(" ülke bilgisi ve kartlar ekrana basılır", () => {
   const arr = Object.entries(ex_data.covid);
 
   arr.forEach((item) => {
-    // başlık ekrana geldi mi ?
+    //^ başlık ekrana geldi mi ?
     screen.getByText(item[0].split("_").join(" "));
-    // değer ekrana geldi mi ?
+    //& değer ekrana geldi mi ?
     const expectedValue =
       typeof item[1] === "number" ? millify(item[1]) : item[1];
 
-    // Eğer değer sayısal ise, millify dönüşümünü kontrol edin
+    //~ Eğer değer sayısal ise, millify dönüşümünü kontrol edin
     const elements = screen.queryAllByText(expectedValue);
     elements.forEach((element) => {
       expect(element).toBeInTheDocument();

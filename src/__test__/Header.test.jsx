@@ -5,7 +5,7 @@ import { render, screen } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Header from "../components/Header/Header";
 
-test("Form bileşeni render ediliyor mu?", () => {
+test("Is the Form component being rendered", () => {
   render(
     <Router>
       <Header />
@@ -16,7 +16,7 @@ test("Form bileşeni render ediliyor mu?", () => {
   expect(screen.getByTestId("form")).toBeInTheDocument();
 });
 
-test("Link bileşeni doğru şekilde render ediliyor mu?", () => {
+test("Is the Link component rendering correctly?", () => {
   render(
     <Router>
       <Header />
@@ -24,12 +24,14 @@ test("Link bileşeni doğru şekilde render ediliyor mu?", () => {
   );
 
   // Link bileşeninin doğru yere yönlendirdiğinden emin olun
-  const linkElement = screen.getByRole("link", { name: /Covid Tracking/i });
+  const linkElement = screen.getByRole("link", {
+    name: /Covid Tracking/i,
+  });
   expect(linkElement).toBeInTheDocument();
   expect(linkElement).toHaveAttribute("href", "/");
 });
 
-test("İkonlar render ediliyor mu?", () => {
+test("Are the icons being rendered?", () => {
   render(
     <Router>
       <Header />
