@@ -42,11 +42,11 @@ This project is a Covid-19 statistics map application built with React. It inclu
 
 ## Preview
 
-![]()
+![](/public/%C4%B0ceCream.gif)
 
 ## Deployment
 
-The project is deployed and can be accessed [here](). For the project to run smoothly, please follow the installation steps below to set it up locally. Note that the project may behave differently across different browsers.
+The project is deployed and can be accessed [here](https://covid-map-unit-test-nu.vercel.app/). For the project to run smoothly, please follow the installation steps below to set it up locally. Note that the project may behave differently across different browsers.
 
 ## Installation
 
